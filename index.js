@@ -47,7 +47,7 @@ function getGiphyImageURL(text, callback) {
         var parsed = JSON.parse(body);
         var randomIndex = Math.floor((Math.random() * 25) + 1);
         var giphyURL = parsed.data[randomIndex].images.original.url;
-        console.log('user searched for ' + userMessage);
+        console.log('user searched for gif of ' + userMessage);
         console.log(giphyURL);
         callback(giphyURL);
       }
